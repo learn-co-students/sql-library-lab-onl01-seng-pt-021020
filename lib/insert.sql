@@ -1,0 +1,6 @@
+INSERT INTO series (id, title, author_id, subgenre_id) VALUES (1, "Lord of the Rings", 1, 1), (2, "Harry Potter", 2, 2);
+INSERT INTO subgenres (id, name) VALUES (1, "Fantacy"), (2, "Magic");
+INSERT INTO authors (id, name) VALUES (1, "Tolkein"), (2, "Rowling");
+INSERT INTO books (id, title, year, series_id) VALUES (1, "The Fellowship of the Ring", 1954, 1), (2, "The Two Towers", 1954, 1), (3, "The Return of the King", 1955, 1), (4, "The Sorcerers Stone", 1997, 2), (5, "The Chamber of Secrets", 1998, 2), (6, "The Prisoner of Azkaban", 1999, 2);
+INSERT INTO characters (id, name, motto, species, author_id) VALUES (1, "Bilbo", "I'm going on an adventure", "Hobbit", 1),(2, "Dragon", "Rawr", "Dragon", 1),(3, "Pipin", "Second Breakfast", "Hobbit", 1),(4, "Gandolf", "You shall not pass", "Wizard", 1),(5, "Ron", "Honestly", "Human", 2),(6, "Harry", "Me, a wizard", "Human", 2),(7, "Hermine", "Its LEVIIOOOSA", "Human", 2),(8, "Hagrid", "I should not have saiid that", "Half Giant", 2);
+INSERT INTO character_books (id, book_id, character_id) VALUES (1, 1, 1), (2, 1, 2), (3, 2, 2), (4, 3, 2), (5, 1, 3), (6, 2, 3), (7, 3, 3), (8, 1, 4), (9, 4, 5), (10, 4, 6), (11, 5, 6), (12, 6, 6), (13, 4, 7), (14, 5, 7), (15, 6, 7), (16, 4, 8);
